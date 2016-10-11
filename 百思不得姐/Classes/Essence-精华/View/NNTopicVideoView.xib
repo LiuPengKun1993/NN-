@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hd5-J8-GY0" customClass="NNTopicVideoView">
+            <rect key="frame" x="0.0" y="0.0" width="309" height="168"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="5LL-zK-MmI" userLabel="占位图片">
+                    <rect key="frame" x="0.0" y="20" width="309" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="vLN-Te-hrY"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZS8-Ba-TpE" userLabel="背景图片">
+                    <rect key="frame" x="0.0" y="0.0" width="309" height="168"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1B-B3-xgd" userLabel="播放次数">
+                    <rect key="frame" x="273" y="0.0" width="36" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZQ-H6-w8W" userLabel="播放时长">
+                    <rect key="frame" x="273" y="151" width="36" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAp-2H-Ye4" userLabel="点击按钮">
+                    <rect key="frame" x="123" y="53" width="63" height="63"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="63" id="WVF-Is-ZAK"/>
+                        <constraint firstAttribute="width" constant="63" id="qkk-lP-KvK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" backgroundImage="video-play">
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="palyBtn:" destination="hd5-J8-GY0" eventType="touchUpInside" id="aOf-sJ-Brv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5LL-zK-MmI" firstAttribute="leading" secondItem="hd5-J8-GY0" secondAttribute="leading" id="3k0-Jx-h1G"/>
+                <constraint firstItem="5LL-zK-MmI" firstAttribute="top" secondItem="hd5-J8-GY0" secondAttribute="top" constant="20" id="4ZZ-Sq-fiz"/>
+                <constraint firstAttribute="trailing" secondItem="tZQ-H6-w8W" secondAttribute="trailing" id="9CJ-aR-mJh"/>
+                <constraint firstAttribute="trailing" secondItem="q1B-B3-xgd" secondAttribute="trailing" id="AE8-mA-zDK"/>
+                <constraint firstItem="ZS8-Ba-TpE" firstAttribute="top" secondItem="hd5-J8-GY0" secondAttribute="top" id="AP8-E8-OOt"/>
+                <constraint firstItem="q1B-B3-xgd" firstAttribute="top" secondItem="hd5-J8-GY0" secondAttribute="top" id="CB8-On-63B"/>
+                <constraint firstAttribute="trailing" secondItem="ZS8-Ba-TpE" secondAttribute="trailing" id="CSX-no-v9J"/>
+                <constraint firstAttribute="bottom" secondItem="ZS8-Ba-TpE" secondAttribute="bottom" id="CgR-uR-apz"/>
+                <constraint firstItem="IAp-2H-Ye4" firstAttribute="centerX" secondItem="hd5-J8-GY0" secondAttribute="centerX" id="Mo2-1q-xcP"/>
+                <constraint firstItem="ZS8-Ba-TpE" firstAttribute="leading" secondItem="hd5-J8-GY0" secondAttribute="leading" id="RUg-6E-R9I"/>
+                <constraint firstAttribute="trailing" secondItem="5LL-zK-MmI" secondAttribute="trailing" id="fwK-q9-MER"/>
+                <constraint firstAttribute="bottom" secondItem="tZQ-H6-w8W" secondAttribute="bottom" id="jwg-rK-OEd"/>
+                <constraint firstItem="IAp-2H-Ye4" firstAttribute="centerY" secondItem="hd5-J8-GY0" secondAttribute="centerY" id="qm6-Ap-l67"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="ZS8-Ba-TpE" id="uYR-xF-M1h"/>
+                <outlet property="playButton" destination="IAp-2H-Ye4" id="cp3-6z-otJ"/>
+                <outlet property="playCountLabel" destination="q1B-B3-xgd" id="th6-ib-UDa"/>
+                <outlet property="videoTimeLabel" destination="tZQ-H6-w8W" id="Dq3-te-kVW"/>
+            </connections>
+            <point key="canvasLocation" x="104.5" y="194"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imageBackground" width="75" height="15"/>
+        <image name="video-play" width="71" height="71"/>
+    </resources>
+</document>

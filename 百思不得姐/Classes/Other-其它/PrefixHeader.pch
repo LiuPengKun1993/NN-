@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  Created by iOS on 16/9/26.
+//  Copyright © 2016年 YMWM. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+NNExtension.h"
+#import "UIBarButtonItem+NNExtension.h"
+#import "NNConst.h"
+#import "NSDate+NNExtension.h"
+#import "UIImage+NNExtension.h"
+#import "UIImageView+NNExtension.h"
+
+#ifdef DEBUG
+#define NNLog(...) NSLog(__VA_ARGS__)
+#else
+#define NNLog(...)
+#endif
+
+#define NNLogFunc NNLog(@"%s", __func__)
+
+#define NNRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define NNGlobalBg NNRGBColor(223, 223, 223)
+
+#define NNScreenW [UIScreen mainScreen].bounds.size.width
+#define NNScreenH [UIScreen mainScreen].bounds.size.height
+
+#endif /* PrefixHeader_pch */
