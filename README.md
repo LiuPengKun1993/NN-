@@ -7,7 +7,7 @@
 
 ![image](https://github.com/liuzhongning/NN-/blob/master/images/NNBaiSi.gif)
 
-
+---
 ##再补充几张静态效果图：
 
 ![image](https://github.com/liuzhongning/NN-/blob/master/images/屏幕快照%202016-10-11%20下午6.06.29.png)
@@ -23,4 +23,4 @@
 ![image](https://github.com/liuzhongning/NN-/blob/master/images/屏幕快照%202016-10-11%20下午6.07.47.png)
 
 ---
-~~~~~~~~**end**~~~~~~~~
+**end**
